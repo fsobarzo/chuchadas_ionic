@@ -1,1 +1,51 @@
 /* Empty. Add your own CSS if you like */
+.item-content{
+  padding-top:0px !important;
+  padding-bottom:0px !important;
+  padding-left: 3px !important;
+  padding-right: 3px !important;
+}
+.button-no-margin{
+	margin-top: 3px !important;
+	margin-bottom: 3px !important;
+}
+.responsive-sm .col{
+	margin-bottom: 3px;
+}
+
+.number-c-i{
+	text-align: center;
+}
+
+/*http://pointdeveloper.com/how-to-add-material-design-floating-action-button-to-ionic-framework-apps/*/
+.float-button {
+	background-color:#303f9f;
+	opacity: 0.9;
+	color: white;
+	border-radius: 50%;
+	/*border-radius:15% 0 0 0;*/
+	width: 30px;
+	padding: 25px;
+	font-size: 40px;
+	position: fixed;
+	bottom: 5%; /* Adjust height */
+	right: 5%; /* Adjust position */
+	z-index: 1000;
+}
+ 
+.float-button .height_fix {
+  margin-top: 100%;
+  border: 1px solid red;
+}
+ 
+.float-button .content {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin-top: -18px;
+  margin-left: 2px;
+  color: white;
+}

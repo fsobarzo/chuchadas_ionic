@@ -1,0 +1,40 @@
+<ion-view view-title="Home">
+  <ion-content >
+
+    <ion-list>        
+      <ion-item ng-repeat="user in users" class="item-content">
+        
+        		<div class="row">
+							<div class="col col-70">
+								<div class="row responsive-sm">
+									<div class="col">
+										<h1>{{ user.username }}</h1>
+									</div>
+									<div class="col">
+									 lleva {{user.quantity}} chuchadas! 
+									</div>
+									<div class="col">Monto: ${{ user.amount }}</div>
+									<div class="col">Monto Total: ${{ user.amount_total }}</div>
+									<div class="col">Ultima chuchada: {{ user.updated_at | date:'dd/MM/yyyy @ h:mma' }}</div>
+								</div>
+							</div>
+          		<div class="col col-30">
+          			<div class="row responsive-sm row-center">
+          				<div class="col">
+          					<label class="item item-input">
+  										<input class="number-c-i" type="number" value="1">
+										</label>
+									</div>
+          				<div class="col">
+          					<button class="button button-block button-assertive button-no-margin" ng-click="addChuchada(user)">+</button>
+          				</div>
+          			</div>
+							</div>
+        		</div>
+
+
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

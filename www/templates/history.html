@@ -1,0 +1,24 @@
+<ion-view view-title="History">
+  <ion-content >
+
+
+    <ion-list>        
+      <ion-item ng-repeat="history in histories | orderBy: '-id'" class="item-content item-text-wrap">
+       	<div class="item">
+       		<h2>{{ history.text }}</h2>
+					<p>Fecha: {{ history.created_at | date:'dd/MM/yyyy @ h:mma' }}</p>
+       	</div>
+
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+
+	<div class="float-button">
+	 <span class="height-fix">
+	    <a class="content" ng-click="refresh()">
+	      <i class="ion-refresh"> </i>
+	    </a>
+	   </span>
+	</div>
+</ion-view>
